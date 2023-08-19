@@ -23,13 +23,15 @@ def index():
 
 
 def generate_prompt(animal):
-    return """Suggest three names for an animal that is a superhero.
+    return """Write a haiku about an animal.
 
 Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+Haiku: Purring, a motor / Or a threatening growl / Curled up in the sun.
+
 Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+Haiku: The tail, from side to / Other side keeps flopping back / My dog is happy.
+
 Animal: {}
-Names:""".format(
+Haiku:""".format(
         animal.capitalize()
     )
